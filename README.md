@@ -1,5 +1,5 @@
 # Ultra-Fast Port Scanner
-## Introduction
+## Description
 A traditional port scanner has a particular task: to scan ports. Most commonly these are TCP ports on a device or a website with an IP address. Port scanners are particularly useful for network engineers, security analysts and basically anyone who wants to play around with websitetes and computers. 
 They work in the following way:
   1. You specify one or more URLs or IP addresses.
@@ -52,6 +52,22 @@ For each website the program shows a list of:
 
 ## Working
 For those of you who are coders and network engineers, I have explained the working of the code below:
+(Note that I will just give a brief description of the code implementation. For detailed implementaion, open and read through scanner.c)
+
+#### Step 1: populate()
+This function registers all the important TCP ports and their respective services from port numbers 1-1024.
+To have a look at which ports and services these are, run the command:
+                ``` cat /etc/services```
+                
+ ![image](https://user-images.githubusercontent.com/76866159/105579995-bc9d0880-5daf-11eb-8f51-dd9df1109f65.png)
+ 
+ #### Step 2: Parse domains
+ In this step, the names of domains that you just entered in "webpages.txt" is read out of the whole URL, the relevant **domain name** is extracted.
+ For example, if I enter: _https://github.com/yuvrajmalhi/Ultra-Fast-Port-Scanner/_
+ then the domain name will be: _github.com_
+
+#### Step 3: 
+
 
 
 
