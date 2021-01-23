@@ -63,7 +63,7 @@ To have a look at which ports and services these are, run the command:
  
  #### Step 2: Parse domains
  In this step, the names of domains that you just entered in "webpages.txt" is read out of the whole URL, the relevant **domain name** is extracted.
- For example, if I enter: _https://github.com/yuvrajmalhi/Ultra-Fast-Port-Scanner/_
+ For example, if I enter: _https://github.com/yuvrajmalhi/Ultra-Fast-Port-Scanner/_ 
  then the domain name will be: _github.com_
 
 #### Step 3: 
