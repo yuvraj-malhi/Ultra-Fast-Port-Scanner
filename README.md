@@ -28,19 +28,15 @@ In my case, I have entered the URL for Google and Yahoo.
 
 ## Step III
 Run the command 
-
                 ``` gcc scanner.c```
-                
                 
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
 If successful, then a file "a.out" will be created.
 
 ## Step IV
 Run the command 
-
                   ``` ./a.out ```
-                  
-                  
+                    
 Give ~30 seconds for the program to run.
 ![image](https://user-images.githubusercontent.com/76866159/105579230-3a124a00-5dab-11eb-97f1-19962f91fa74.png)
 
