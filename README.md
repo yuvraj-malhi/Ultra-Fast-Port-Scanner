@@ -54,19 +54,29 @@ For each website the program shows a list of:
 For those of you who are coders and network engineers, I have explained the working of the code below:
 (Note that I will just give a brief description of the code implementation. For detailed implementaion, open and read through scanner.c)
 
-#### Step 1: populate()
+#### Step 1: Service-Port Reading - populate()
 This function registers all the important TCP ports and their respective services from port numbers 1-1024.
 To have a look at which ports and services these are, run the command:
                 ``` cat /etc/services```
                 
  ![image](https://user-images.githubusercontent.com/76866159/105579995-bc9d0880-5daf-11eb-8f51-dd9df1109f65.png)
  
- #### Step 2: Parse domains
+ #### Step 2: Parse domains - domainparse()
  In this step, the names of domains that you just entered in "webpages.txt" is read out of the whole URL, the relevant **domain name** is extracted.
  For example, if I enter: _https://github.com/yuvrajmalhi/Ultra-Fast-Port-Scanner/_ 
+ 
  then the domain name will be: _github.com_
 
-#### Step 3: 
+#### Step 3: DNS lookup - lookup_webpage() -> getaddrinfo()
+After a website's domain name has been read, then it's IP addresses (IPv4 and IPv6) are fetched using DNS protocol. If no addresses are returned, then an error is shown and the function returns.
+
+If valid IP addresses are received then they are displayed and for each IP address Step 4 is carried out.
+
+#### Step 4: DNS lookup - lookup_webpage() -> connect()
+Now for each of the port read in Step 1:
+
+> This function registers all the important TCP ports and
+> their respective services from port numbers 1-1024.
 
 
 
