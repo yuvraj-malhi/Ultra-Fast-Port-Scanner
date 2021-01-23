@@ -27,7 +27,7 @@ In my case, I have entered the URL for Google and Yahoo.
 
 
 ## Step III
-Run the command gcc scanner.c
+Run the command '''gcc scanner.c'''
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
 If successful, then a file "a.out" will be created.
 
@@ -45,7 +45,10 @@ For each website the program shows a list of:
   4. Ports open on the IPv6 addresses
   5. Services running on each of the above open ports.
   
-  
-  
+
+## Working
+For those of you who are coders and network engineers, I have explained the working of the code below:
+
+
 
 
