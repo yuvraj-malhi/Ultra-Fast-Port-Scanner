@@ -37,13 +37,13 @@ Give ~30 seconds for the program to run.
 ![image](https://user-images.githubusercontent.com/76866159/105579230-3a124a00-5dab-11eb-97f1-19962f91fa74.png)
 
 Complete! 
-Now you can see the results which are 5X faster than nmap and also very easy to understand.
+Now you can see the results which are **5X** faster than nmap and also very easy to understand.
 For each website the program shows a list of:
-  1. IPv4 addresses
-  2. IPv6 addresses
-  3. Ports open on the IPv4 addresses
-  4. Ports open on the IPv6 addresses
-  5. Services running on each of the above open ports.
+  _1. IPv4 addresses
+  _2. IPv6 addresses
+  _3. Ports open on the IPv4 addresses
+  _4. Ports open on the IPv6 addresses
+  _5. Services running on each of the above open ports.
   
   
   
