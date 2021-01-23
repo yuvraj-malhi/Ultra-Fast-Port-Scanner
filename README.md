@@ -28,6 +28,7 @@ In my case, I have entered the URL for Google and Yahoo.
 
 ### Step III
 Run the command 
+
                 ``` gcc scanner.c```
                 
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
@@ -35,6 +36,7 @@ If successful, then a file "a.out" will be created.
 
 ### Step IV
 Run the command 
+
                   ``` ./a.out ```
                     
 Give ~30 seconds for the program to run.
@@ -75,8 +77,7 @@ If valid IP addresses are received then they are displayed and for each IP addre
 #### Step 4: DNS lookup - lookup_webpage() -> connect()
 Now for each of the port read in Step 1:
 
-> This function registers all the important TCP ports and
-> their respective services from port numbers 1-1024.
+> This function registers all the important TCP ports and their respective services from port numbers 1-1024.
 
 
 
