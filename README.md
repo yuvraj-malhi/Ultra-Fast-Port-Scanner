@@ -20,20 +20,20 @@ Download "scanner.c" and move to the folder where you have downloaded it Command
 ![image](https://user-images.githubusercontent.com/76866159/105578937-a12eff00-5da9-11eb-99f1-fa3c0e05d8b4.png)
 
 
-## Step II
+### Step II
 Make a new file "webpages.txt" and enter enter the website URLs you want to scan line-by-line using vi-editor. 
 ![image](https://user-images.githubusercontent.com/76866159/105579035-eeab6c00-5da9-11eb-8dd4-9c1ee1f96467.png)
 In my case, I have entered the URL for Google and Yahoo.
 
 
-## Step III
+### Step III
 Run the command 
                 ``` gcc scanner.c```
                 
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
 If successful, then a file "a.out" will be created.
 
-## Step IV
+### Step IV
 Run the command 
                   ``` ./a.out ```
                     
