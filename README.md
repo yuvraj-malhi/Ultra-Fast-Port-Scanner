@@ -28,7 +28,6 @@ In my case, I have entered the URL for Google and Yahoo.
 
 ### Step III
 Run the command 
-
                 ``` gcc scanner.c```
                 
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
@@ -36,10 +35,10 @@ If successful, then a file "a.out" will be created.
 
 ### Step IV
 Run the command 
-
-                  ``` ./a.out ```
+                  ``` sudo ./a.out ```
                     
 Give ~30 seconds for the program to run.
+
 ![image](https://user-images.githubusercontent.com/76866159/105579230-3a124a00-5dab-11eb-97f1-19962f91fa74.png)
 
 Complete! 
@@ -79,6 +78,22 @@ Now for each of the port read in Step 1:
 
 > This function registers all the important TCP ports and their respective services from port numbers 1-1024.
 
+A child process for each port is created using fork() which connects to a port number on the IP address received from Step 3. This results in two possible outcomes:
+1. If connect() fails or times out    -    The port is probably closed, hence ignored.
+2. If connect() succeeds              -    The port is surely open, hence displayed.
+
+To make the above process faster, maximum of 100 processes at a time are allowed to connect to their ports. This way, the stop and wait condition is eliminated.
+The timeouts are implemented in using gettimeofday() function.
+
+If you want to speed the process up further, reduce the sleep value in line 155:
+```sleep(10)```
+
+This however, might make your program skip a few open ports. So it is not recommended.
+
+
+Thanks!
+If you liked my work then share it so that others might use it someday.
+If you have any queries, then send me a message and I'll help you out.
 
 
 
