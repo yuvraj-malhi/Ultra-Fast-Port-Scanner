@@ -43,6 +43,7 @@ For each website the program shows a list of:
   2. IPv6 addresses
   3. Ports open on the IPv4 addresses
   4. Ports open on the IPv6 addresses
+  5. Services running on each of the above open ports.
   
   
   
