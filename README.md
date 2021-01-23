@@ -1,6 +1,6 @@
 # Ultra-Fast Port Scanner
 ## Introduction
-A traditional port scanner has a particular task: to scan ports. Most commonly these are TCP ports on a device or a website with an IP address. These are particularly useful for network engineers, security analysts and basically anyone who wants to play around with websitetes and computers. 
+A traditional port scanner has a particular task: to scan ports. Most commonly these are TCP ports on a device or a website with an IP address. Port scanners are particularly useful for network engineers, security analysts and basically anyone who wants to play around with websitetes and computers. 
 They work in the following way:
   1. You specify one or more URLs or IP addresses.
   2. These are scanned for open TCP ports (like DNS, HTTP, HTTPs etc.)
