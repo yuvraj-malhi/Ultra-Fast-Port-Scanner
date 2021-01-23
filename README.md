@@ -27,15 +27,15 @@ In my case, I have entered the URL for Google and Yahoo.
 
 
 ### Step III
-Run the command:   
-                ``` gcc scanner.c```
+Run the command:    
+```                    gcc scanner.c```
                 
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
 If successful, then a file "a.out" will be created.
 
 ### Step IV
 Run the command:   
-                  ``` sudo ./a.out ```
+```                    sudo ./a.out ```
                     
 Give ~30 seconds for the program to run.
 
@@ -57,8 +57,8 @@ For those of you who are coders and network engineers, I have explained the work
 
 #### Step 1: Service-Port Reading - populate()
 This function registers all the important TCP ports and their respective services from port numbers 1-1024.
-To have a look at which ports and services these are, run the command:
-                ```sudo cat /etc/services```
+To have a look at which ports and services these are, run the command:   
+ ```                    sudo cat /etc/services```
                 
  ![image](https://user-images.githubusercontent.com/76866159/105579995-bc9d0880-5daf-11eb-8f51-dd9df1109f65.png)
  
