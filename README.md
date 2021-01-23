@@ -28,14 +28,14 @@ In my case, I have entered the URL for Google and Yahoo.
 
 ### Step III
 Run the command:    
-```                    gcc scanner.c```
+``` gcc scanner.c```
                 
 ![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
 If successful, then a file "a.out" will be created.
 
 ### Step IV
 Run the command:   
-```                    sudo ./a.out ```
+``` sudo ./a.out ```
                     
 Give ~30 seconds for the program to run.
 
@@ -55,37 +55,37 @@ For each website the program shows a list of:
 For those of you who are coders and network engineers, I have explained the working of the code below:
 (Note that I will just give a brief description of the code implementation. For detailed implementaion, open and read through scanner.c)
 
-#### Step 1: Service-Port Reading - populate()
+### Step 1: Service-Port Reading - populate()
 This function registers all the important TCP ports and their respective services from port numbers 1-1024.
 To have a look at which ports and services these are, run the command:   
- ```                    sudo cat /etc/services```
+ ```sudo cat /etc/services```
                 
  ![image](https://user-images.githubusercontent.com/76866159/105579995-bc9d0880-5daf-11eb-8f51-dd9df1109f65.png)
  
- #### Step 2: Parse domains - domainparse()
+ ### Step 2: Parse domains - domainparse()
  In this step, the names of domains that you just entered in "webpages.txt" is read out of the whole URL, the relevant **domain name** is extracted.
  For example, if I enter: _https://github.com/yuvrajmalhi/Ultra-Fast-Port-Scanner/_ 
  
  then the domain name will be: _github.com_
 
-#### Step 3: DNS lookup - lookup_webpage() -> getaddrinfo()
+### Step 3: DNS lookup - lookup_webpage() -> getaddrinfo()
 After a website's domain name has been read, then it's IP addresses (IPv4 and IPv6) are fetched using DNS protocol. If no addresses are returned, then an error is shown and the function returns.
 
 If valid IP addresses are received then they are displayed and for each IP address Step 4 is carried out.
 
-#### Step 4: DNS lookup - lookup_webpage() -> connect()
+### Step 4: DNS lookup - lookup_webpage() -> connect()
 Now for each of the port read in Step 1:
 
 > This function registers all the important TCP ports and their respective services from port numbers 1-1024.
 
 A child process for each port is created using fork() which connects to a port number on the IP address received from Step 3. This results in two possible outcomes:
-1. If connect() fails or times out    -    The port is probably closed, hence ignored.
-2. If connect() succeeds              -    The port is surely open, hence displayed.
+  1. If connect() fails or times out    -    The port is probably closed, hence ignored.
+  2. If connect() succeeds              -    The port is surely open, hence displayed.
 
 To make the above process faster, maximum of 100 processes at a time are allowed to connect to their ports. This way, the stop and wait condition is eliminated.
 The timeouts are implemented in using gettimeofday() function.
 
-If you want to speed the process up further, reduce the sleep value in line 155:
+If you want to speed the process up further, reduce the sleep value in line 155:     
 ```sleep(10)```
 
 This however, might make your program skip a few open ports. So it is not recommended.
