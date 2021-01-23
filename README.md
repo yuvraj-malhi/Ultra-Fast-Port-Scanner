@@ -90,7 +90,8 @@ If you want to speed the process up further, reduce the sleep value in line 155:
 
 This however, might make your program skip a few open ports. So it is not recommended.
 
-:simple_smile::simple_smile:
-Thanks!
 
-If you liked my work then share it so that others might use it someday.
+
+Do share if you liked my work. Thanks!
+
+:smile:
