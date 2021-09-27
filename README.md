@@ -60,7 +60,7 @@ This function registers all the important TCP ports and their respective service
 To have a look at which ports and services these are, run the command:   
  ```sudo cat /etc/services```
                 
- ![image](https://user-images.githubusercontent.com/76866159/105579995-bc9d0880-5daf-11eb-8f51-dd9df1109f65.png)
+ ![image](https://user-images.githubusercontent.com/76866159/134986426-3aa0d621-e8a0-4502-b5e3-c36c0d1b2f09.png)
  
  ### Step 2: Parse domains - domainparse()
  In this step, the names of domains that you just entered in "webpages.txt" is read out of the whole URL, the relevant **domain name** is extracted.
