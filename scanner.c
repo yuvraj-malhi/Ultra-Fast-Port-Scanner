@@ -152,7 +152,7 @@ void lookup_webpage(char * webpage)
 		}
 		}
 
-	sleep(10);										// Give MAXIMUM 10 seconds for connect to suceed, then move on to next 100 ports			
+	sleep(4);										// Give MAXIMUM 10 seconds for connect to suceed, then move on to next 100 ports			
 	
 	for(int i=0; i<1024; i++)
 		if(CHILD_PIDS[i]!=0)
