@@ -14,32 +14,30 @@ The drawback for famous tools like nmap is :
   
 This project was created keeping in mind the deficiencies of all the present port scanners in mind. Hence this new scanner is _fast, easy to use, and open sourced._
 
-## Usage
-### Step I
-Download "scanner.c" and move to the folder where you have downloaded it Command Line Interface.
-![image](https://user-images.githubusercontent.com/76866159/105578937-a12eff00-5da9-11eb-99f1-fa3c0e05d8b4.png)
+
+### Setup Scanner
+Run the following commands to download and compile the scanner:
+``` sudo git clone https://github.com/yuvrajmalhi/Ultra-Fast-Port-Scanner.git```           
+```cd Ultra-Fast-Port-Scanner/```                   
+```gcc scanner.c -o scanner```           
+```ls```  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; - &emsp;  *Confirm that ther 'scanner' executable and file are present*        
+
+Here's how:   
+![Setup_scanner](https://user-images.githubusercontent.com/76866159/135032180-a1f9f85a-7afa-450d-aee0-4114443e388f.gif)   
 
 
-### Step II
+### Usage
 Make a new file "webpages.txt" and enter enter the website URLs you want to scan line-by-line using vi-editor. 
-![image](https://user-images.githubusercontent.com/76866159/105579035-eeab6c00-5da9-11eb-8dd4-9c1ee1f96467.png)
-In my case, I have entered the URL for Google and Yahoo.
 
+```vi webpages.txt```  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; - &emsp;  *Enter the URLs. Eg: google.com, yahoo.com*   
+```ls```           
+```sudo ./scanner```       
+        
+Give ~20 seconds for the program to run and watch as the results come!    
 
-### Step III
-Run the command:    
-``` gcc scanner.c```
-                
-![image](https://user-images.githubusercontent.com/76866159/105579123-83ae6500-5daa-11eb-84f4-1f1af7410e82.png)
-If successful, then a file "a.out" will be created.
+Watch this for a quick demo:      
 
-### Step IV
-Run the command:   
-``` sudo ./a.out ```
-                    
-Give ~30 seconds for the program to run.
-
-![image](https://user-images.githubusercontent.com/76866159/105579230-3a124a00-5dab-11eb-97f1-19962f91fa74.png)
+![Demo](https://user-images.githubusercontent.com/76866159/135033161-52de5f03-9faa-4e36-b521-a44d7c403117.gif)
 
 Complete! 
 Now you can see the results which are **5X** faster than nmap and also very easy to understand.
@@ -86,9 +84,9 @@ To make the above process faster, maximum of 100 processes at a time are allowed
 The timeouts are implemented in using gettimeofday() function.
 
 If you want to speed the process up further, reduce the sleep value in line 155:     
-```sleep(10)```
+```sleep(4)```
 
-This however, might make your program skip a few open ports. So it is not recommended.
+However, this might make your program skip a few open ports. So it is not recommended.
 
 
 
