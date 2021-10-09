@@ -1,5 +1,5 @@
 ## Description   
-<span style="color: white;">     A traditional port scanner has a particular task: to scan ports. Most commonly these are TCP ports on a device or a website with an IP address. Port scanners are particularly useful for network engineers, security analysts and basically anyone who wants to play around with websitetes and computers. 
+A traditional port scanner has a particular task: to scan ports. Most commonly these are TCP ports on a device or a website with an IP address. Port scanners are particularly useful for network engineers, security analysts and basically anyone who wants to play around with websitetes and computers. 
 They work in the following way:
   1. You specify one or more URLs or IP addresses.
   2. These are scanned for open TCP ports (like DNS, HTTP, HTTPs etc.)
@@ -38,4 +38,3 @@ For each of the port read in Step 1:
 A child process for each port is created using fork() which connects to a port number on the IP address received from Step 3. This results in two possible outcomes:
   1. If connect() fails or times out    -    The port is probably closed, hence ignored.
   2. If connect() succeeds              -    The port is surely open, hence displayed.
-</span>
